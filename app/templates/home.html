@@ -1,9 +1,12 @@
 <div class="page-container">
+
+  <nav class= "navbar">
     <h1> Bloc Chat </h1>
-    <table>
-        <tr>
-          <td>{{ $index + 1}}</td>
-          <td>{{room.homePage}}</td>
+  </nav>
+
+  <table>
+        <tr ng-repeat="room in room.rooms">
+          <td>{{room.$value}}</td>
         </tr>
     </table>
 

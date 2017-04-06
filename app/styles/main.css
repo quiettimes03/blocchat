@@ -1,0 +1,13 @@
+html {
+height: 100%;
+font-size: 100%;
+}
+
+body{
+  background-color: lightblue;
+  background-position: center center;
+  font-family: 'Open Sans';
+  color: grey;
+  min-height: 100%;
+  padding-bottom: 200px;
+}
