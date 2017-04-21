@@ -2,12 +2,17 @@
 
   <nav class= "navbar">
     <h1> Bloc Chat </h1>
+
+
   </nav>
 
   <table>
         <tr ng-repeat="room in room.rooms">
-          <td>{{room.$value}}</td>
+          <td>{{room.name}}</td>
+
         </tr>
     </table>
 
 </div>
+
+<ng-include src="'/templates/NewRoom.html'"></ng-include>
