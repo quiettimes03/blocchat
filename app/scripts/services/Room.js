@@ -7,12 +7,17 @@
         var id = ref.key;
         console.log("Added a record with id " +id);
         rooms.$indexFor(id);
-    });
-  };
+      });
+    };
+
+    var activateRoom = function(rooms){
+        var activeRoom = rooms;
+    };
 
     return {
       all: rooms,
-      add: addFunc
+      add: addFunc,
+      activate: activateRoom
     };
   }
 

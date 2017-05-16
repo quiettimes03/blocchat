@@ -12,6 +12,13 @@
           controller: 'HomeCtrl as room',
           templateUrl: '/templates/home.html'
         });
+
+        $stateProvider
+          .state('active', {
+            url: '/',
+            controller: 'ActiveRoomCtrl as active',
+            templateUrl: '/templates/home.html'
+          });
     }
 
     angular

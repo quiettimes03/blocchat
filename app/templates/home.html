@@ -1,18 +1,17 @@
-<div class="page-container">
-
-  <nav class= "navbar">
+<nav>
     <h1> Bloc Chat </h1>
+</nav>
 
-
-  </nav>
-
-  <table>
-        <tr ng-repeat="room in room.rooms">
-          <td>{{room.name}}</td>
-
-        </tr>
-    </table>
-
+<div class="rooms-container">
+    <ol>
+        <li ng-repeat="r in room.rooms" ng-click="room.activateRoom(r)">{{r.name}}</li>
+    </ol>
+    <ng-include src="'/templates/NewRoom.html'"></ng-include>
 </div>
 
-<ng-include src="'/templates/NewRoom.html'"></ng-include>
+<div class = "room-messages-container">
+      <h3>{{room.activeRoom.name}}</h3>
+      <ul>
+          <li ng-repeat="message in room.messages">{{message.content}} </li>
+      </ul>
+</div>
