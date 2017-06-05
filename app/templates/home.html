@@ -15,3 +15,12 @@
           <li ng-repeat="message in room.messages">{{message.content}} </li>
       </ul>
 </div>
+
+<div class = "send-messages-container">
+  <form class="form-horizontal">
+      <div class="col-sm-10">
+        <input type="message" class="form-control" id="message" placeholder="Type your message here" ng-model="newMessage">
+      </div>
+      <button type="button" class="btn btn-send" ng-click="room.sendMessages(newMessage)">Send</button>
+
+</div>
